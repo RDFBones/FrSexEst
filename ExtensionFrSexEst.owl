@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#"
+     xml:base="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:skos2="http://www.w3.org/2008/05/skos#"
+     xmlns:core="http://w3id.org/rdfbones/core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:core1="http://vivoweb.org/ontology/core#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#description -->
+
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#isMentioned -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core#isMentioned"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000339"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001892"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Book -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+        <rdfs:comment>Ferembach, Denise, Ilse Schwidetzky, and Milan Stloukal. &quot;Empfehlungen für die Alters- und Geschlechtsdiagnose am Skelett.(Recommandations pour le diagnostic de l&apos;âge et du sexe sur les squelettes).&quot; Homo Göttingen 30.2 (1979): 1-32.</rdfs:comment>
+        <rdfs:label>Ferembach et al. 1979</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#PlanningFrSexEst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#PlanningFrSexEst">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000339"/>
+        <obo:OBI_0000299 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ProtocolFrSexEst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ProtocolFrSexEst">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationExternalOccipitalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationExternalOccipitalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+        <core1:description>Hyper-feminin (-2): very weak
+
+Feminin (-1): weak
+
+Indifferent (0): medium
+
+Masculin (+1): strong
+
+Hyper-masculin (+2): very strong</core1:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationFrontalAndParietalEminences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationFrontalAndParietalEminences">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationGlabella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationGlabella">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationGonialAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationGonialAngle">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMandibleAsAWhole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMandibleAsAWhole">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMastoidProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMastoidProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMentalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMentalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMylohyoidLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationMylohyoidLine">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationNuchalPlanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationNuchalPlanum">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataFrSexEst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataFrSexEst">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001892"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationSupercillaryArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationSupercillaryArch">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationSupramastoidCrest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationSupramastoidCrest">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomaticArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomaticArch">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomaticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomaticProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationZygomatics">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+        <core:isMentioned rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjectiveFrSexEst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjectiveFrSexEst">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignFrSexEst">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;Acsádi_&amp;_Nemeskéri_1970&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;Acsádi_&amp;_Nemeskéri_1970&apos;">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <rdfs:comment>Acsádi, György, and Janos Nemeskéri. &quot;History of human life span and mortality.&quot; Budapest: Acad. Kaido (1970).</rdfs:comment>
+        <rdfs:label>Acsádi &amp; Nemeskéri 1970</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+
