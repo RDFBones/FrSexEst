@@ -881,6 +881,10 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Investigation.FrSexEst">
+      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
+    </rdf:Description>
     
 
 
