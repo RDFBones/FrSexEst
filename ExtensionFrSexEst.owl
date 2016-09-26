@@ -18,7 +18,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26"/>
     
 
@@ -832,7 +833,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#isMentioned"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;Acsádi_&amp;_Nemeskéri_1970&apos;"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsadi_Nemeskeri_1970"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1808,8 +1809,8 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al_1979">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
         <rdfs:comment>Ferembach, Denise, Ilse Schwidetzky, and Milan Stloukal. &quot;Empfehlungen für die Alters- und Geschlechtsdiagnose am Skelett.(Recommandations pour le diagnostic de l&apos;âge et du sexe sur les squelettes).&quot; Homo Göttingen 30.2 (1979): 1-32.</rdfs:comment>
         <rdfs:label>Ferembach et al. 1979</rdfs:label>
     </owl:NamedIndividual>
@@ -2263,7 +2264,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;Acsádi_&amp;_Nemeskéri_1970&apos; -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;Acsádi_&amp;_Nemeskéri_1970&apos;">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsadi_Nemeskeri_1970">
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
         <core1:description>Acsádi, György, and Janos Nemeskéri. &quot;History of human life span and mortality.&quot; Budapest: Acad. Kaido (1970).</core1:description>
         <rdfs:label>Acsádi &amp; Nemeskéri 1970</rdfs:label>
