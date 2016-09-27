@@ -876,12 +876,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         </rdfs:subClassOf>
     </owl:Class>
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Investigation.FrSexEst">
-      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
-    </rdf:Description>
-    
-
-
+   
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst">
@@ -2605,6 +2600,19 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <core1:description>White, Tim D., and Pieter A. Folkens. The human bone manual. Academic Press, 2005.</core1:description>
         <rdfs:label>White &amp; Folkens 2005</rdfs:label>
     </owl:NamedIndividual>
+
+
+    <!-- add classgroup entries for VIVO -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Investigation.FrSexEst">
+      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Planning.FrSexEst">
+      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
+    </rdf:Description>
+    
+
+
 </rdf:RDF>
 
 
