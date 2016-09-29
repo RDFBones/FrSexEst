@@ -16,10 +16,10 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:core1="http://vivoweb.org/ontology/core#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:bibo="http://purl.org/ontology/bibo/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26"/>
     
 
@@ -32,6 +32,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#inClassGroup -->
+
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#inClassGroup"/>
     
 
 
@@ -122,6 +128,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
@@ -140,7 +152,7 @@
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#&apos;inverse_IsAbout&apos; -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout">
         <rdfs:label>inverse IsAbout</rdfs:label>
@@ -162,7 +174,7 @@
     <!-- http://purl.obolibrary.org/obo/FMA_46565 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_46565"/>
-      
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
@@ -279,6 +291,12 @@
     
 
 
+    <!-- http://purl.org/ontology/bibo/AcademicArticle -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AcademicArticle"/>
+    
+
+
     <!-- http://purl.org/ontology/bibo/Book -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
@@ -287,14 +305,7 @@
 
     <!-- http://w3id.org/rdfbones/core#Completeness2States -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2States">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2States"/>
     
 
 
@@ -355,17 +366,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ExternalOccipitalProtuberance -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ExternalOccipitalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ExternalOccipitalProtuberance"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ExternalOccipitalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ExternalOccipitalProtuberance"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -380,14 +391,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst.ZygomaticArch -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst">
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst.ZygomaticArch">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignExecution.FrSexEst"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexScore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -397,17 +421,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrontalAndParietalEminences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrontalAndParietalEminences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.FrontalAndParietalEminences"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrontalAndParietalEminences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.FrontalAndParietalEminences"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -426,17 +450,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Glabella -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Glabella">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Glabella"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Glabella"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Glabella"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -454,17 +478,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.GonialAngle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.GonialAngle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.GonialAngle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.GonialAngle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.GonialAngle"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -482,17 +506,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MandibleAsAWhole -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MandibleAsAWhole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MandibleAsAWhole"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MandibleAsAWhole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MandibleAsAWhole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -510,17 +534,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MastoidProcess -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MastoidProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MastoidProcess"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MastoidProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MastoidProcess"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -538,17 +562,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MentalProtuberance -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MentalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MentalProtuberance"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MentalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MentalProtuberance"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -566,17 +590,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MylohyoidLine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MylohyoidLine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MylohyoidLine"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MylohyoidLine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MylohyoidLine"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -594,17 +618,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.NuchalPlanum -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.NuchalPlanum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.NuchalPlanum"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.NuchalPlanum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.NuchalPlanum"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -622,17 +646,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SuperciliaryArch -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SuperciliaryArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SuperciliaryArch"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SuperciliaryArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SuperciliaryArch"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -650,17 +674,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SupramastoidCrest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SupramastoidCrest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SupramastoidCrest"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SupramastoidCrest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SupramastoidCrest"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -675,47 +699,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ZygomaticArch -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexScore"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ZygomaticProcess -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ZygomaticProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticProcess"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ZygomaticProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticProcess"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -734,17 +731,17 @@
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Zygomatics -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Zygomatics">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Zygomatics"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Zygomatics"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -755,14 +752,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <core1:description>&quot;Zygomatics form the prominent corners (cheeks) of the face. The edges are easily identifiable, with the rounded orbital rim, the sharp area around jugale adjacent to the temporal fossa, and the roughened inferior border. Each zygomatic bone articulates, via its three main processes, with the frontal, sphenoid, temporal, and maxilla&quot; (White &amp; Folkens 2005: 115).</core1:description>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#CranialAssay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst"/>
     </owl:Class>
     
 
@@ -874,27 +863,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-
-   
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#MandibularAssay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst"/>
+        <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
     </owl:Class>
     
 
@@ -941,26 +910,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
     </owl:Class>
     
 
@@ -973,20 +923,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1007,98 +943,16 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ExternalOccipitalProtuberance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst">
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ExternalOccipitalProtuberance">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ExternalOccipitalProtuberance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ExternalOccipitalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.FrontalAndParietalEminences -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.FrontalAndParietalEminences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Glabella -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Glabella">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.GonialAngle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.GonialAngle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MandibleAsAWhole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MandibleAsAWhole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MastoidProcess -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MastoidProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MentalProtuberance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MentalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MylohyoidLine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MylohyoidLine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.NuchalPlanum -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.NuchalPlanum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SuperciliaryArch -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SuperciliaryArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SupramastoidCrest -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SupramastoidCrest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1106,61 +960,191 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticArch -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticProcess -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Zygomatics -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Zygomatics">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrontalAndParietalEminences -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst">
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrontalAndParietalEminences">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Glabella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Glabella">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.GonialAngle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.GonialAngle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MandibleAsAWhole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MandibleAsAWhole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MastoidProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MastoidProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MentalProtuberance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MentalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MylohyoidLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MylohyoidLine">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.NuchalPlanum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.NuchalPlanum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SuperciliaryArch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SuperciliaryArch">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SupramastoidCrest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SupramastoidCrest">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ZygomaticProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ZygomaticProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Zygomatics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Zygomatics">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ExternalOccipitalProtuberance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ExternalOccipitalProtuberance">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesignExecution.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ExternalOccipitalProtuberance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ExternalOccipitalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone"/>
             </owl:Restriction>
@@ -1168,345 +1152,13 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ExternalOccipitalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ExternalOccipitalProtuberance"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ExternalOccipitalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ExternalOccipitalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.FrontalAndParietalEminences -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.FrontalAndParietalEminences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfParietalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.FrontalAndParietalEminences"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.FrontalAndParietalEminences"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.FrontalAndParietalEminences"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.Glabella -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.Glabella">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Glabella"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Glabella"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Glabella"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.GonialAngle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.GonialAngle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.GonialAngle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.GonialAngle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.GonialAngle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MandibleAsAWhole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MandibleAsAWhole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MandibleAsAWhole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MandibleAsAWhole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MandibleAsAWhole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MastoidProcess -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MastoidProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MastoidProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MastoidProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MastoidProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MentalProtuberance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MentalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MentalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MentalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MentalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MylohyoidLine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.MylohyoidLine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.MylohyoidLine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MylohyoidLine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MylohyoidLine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.NuchalPlanum -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.NuchalPlanum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.NuchalPlanum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.NuchalPlanum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.NuchalPlanum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.SuperciliaryArch -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.SuperciliaryArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SuperciliaryArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SuperciliaryArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SuperciliaryArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.SupramastoidCrest -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.SupramastoidCrest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.SupramastoidCrest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SupramastoidCrest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SupramastoidCrest"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1516,7 +1168,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticArch -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1537,12 +1189,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch"/>
             </owl:Restriction>
@@ -1551,10 +1197,120 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticProcess -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrontalAndParietalEminences -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticProcess">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrontalAndParietalEminences">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfParietalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Glabella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Glabella">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.GonialAngle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.GonialAngle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MandibleAsAWhole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MandibleAsAWhole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MastoidProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MastoidProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1564,29 +1320,179 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticProcess"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MastoidProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticProcess"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.Zygomatics -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MentalProtuberance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.Zygomatics">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MentalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MylohyoidLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MylohyoidLine">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.NuchalPlanum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.NuchalPlanum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SuperciliaryArch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SuperciliaryArch">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SupramastoidCrest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SupramastoidCrest">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ZygomaticProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ZygomaticProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Zygomatics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Zygomatics">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1596,19 +1502,13 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.Zygomatics"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Zygomatics"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Zygomatics"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1625,14 +1525,180 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Investigation.FrSexEst"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ExternalOccipitalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrSexEst.ZygomaticArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MastoidProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Assay.Zygomatics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#DataTransformation.FrSexEst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ExternalOccipitalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MastoidProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Zygomatics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1654,99 +1720,28 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsadi_Nemeskeri_1970 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsadi_Nemeskeri_1970">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <core1:description>Acsádi, György, and Janos Nemeskéri. &quot;History of human life span and mortality.&quot; Budapest: Acad. Kaido (1970).</core1:description>
+        <rdfs:label>Acsádi &amp; Nemeskéri 1970</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AlexanderEckerCollectionDataEntryForm -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AlexanderEckerCollectionDataEntryForm">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
-        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ExternalOccipitalProtuberance -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ExternalOccipitalProtuberance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ExternalOccipitalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.FrontalAndParietalEminences -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.FrontalAndParietalEminences">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Glabella -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Glabella">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.GonialAngle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.GonialAngle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MandibleAsAWhole -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MandibleAsAWhole">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MastoidProcess -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MastoidProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MentalProtuberance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MentalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MylohyoidLine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.MylohyoidLine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.NuchalPlanum -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.NuchalPlanum">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SuperciliaryArch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SuperciliaryArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SupramastoidCrest -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.SupramastoidCrest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ExternalOccipitalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
     </owl:NamedIndividual>
     
 
@@ -1754,23 +1749,103 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticArch -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticProcess -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrontalAndParietalEminences -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrontalAndParietalEminences">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Zygomatics -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Glabella -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.Zygomatics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#InvestigationAssaySpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Glabella">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.GonialAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.GonialAngle">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MandibleAsAWhole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MandibleAsAWhole">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MastoidProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MastoidProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MentalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MentalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MylohyoidLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MylohyoidLine">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.NuchalPlanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.NuchalPlanum">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SuperciliaryArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SuperciliaryArch">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SupramastoidCrest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SupramastoidCrest">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ZygomaticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ZygomaticProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Zygomatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Zygomatics">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
     </owl:NamedIndividual>
     
 
@@ -1779,7 +1854,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#DataTransformationObjective.FrSexEst">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
-        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
     </owl:NamedIndividual>
     
 
@@ -1800,7 +1874,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al._1979 -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al_1979 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Ferembach_et_al_1979">
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
@@ -1858,101 +1932,18 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ExternalOccipitalProtuberance -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ExternalOccipitalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ExternalOccipitalProtuberance"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexEstimation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.FrontalAndParietalEminences -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.FrontalAndParietalEminences">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.FrontalAndParietalEminences"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Glabella -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Glabella">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Glabella"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.GonialAngle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.GonialAngle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.GonialAngle"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MandibleAsAWhole -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MandibleAsAWhole">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MandibleAsAWhole"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MastoidProcess -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MastoidProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MastoidProcess"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MentalProtuberance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MentalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MentalProtuberance"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MylohyoidLine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.MylohyoidLine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MylohyoidLine"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.NuchalPlanum -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.NuchalPlanum">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.NuchalPlanum"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SuperciliaryArch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SuperciliaryArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SuperciliaryArch"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SupramastoidCrest -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.SupramastoidCrest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SupramastoidCrest"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
     </owl:NamedIndividual>
     
 
@@ -1960,26 +1951,103 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticArch"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticProcess -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticProcess"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Zygomatics -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.Zygomatics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst"/>
-        <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Zygomatics"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
     </owl:NamedIndividual>
     
 
@@ -1988,103 +2056,14 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001892"/>
-        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ExternalOccipitalProtuberance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ExternalOccipitalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ExternalOccipitalProtuberance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ExternalOccipitalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.FrontalAndParietalEminences -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.FrontalAndParietalEminences">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Glabella -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Glabella">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.GonialAngle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.GonialAngle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MandibleAsAWhole -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MandibleAsAWhole">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MastoidProcess -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MastoidProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MentalProtuberance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MentalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MylohyoidLine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.MylohyoidLine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.NuchalPlanum -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.NuchalPlanum">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SuperciliaryArch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SuperciliaryArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SupramastoidCrest -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.SupramastoidCrest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
     </owl:NamedIndividual>
     
 
@@ -2092,23 +2071,103 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticArch -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticProcess -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrontalAndParietalEminences -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrontalAndParietalEminences">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Zygomatics -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Glabella -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.Zygomatics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Glabella">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.GonialAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.GonialAngle">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MandibleAsAWhole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MandibleAsAWhole">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MastoidProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MastoidProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MentalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MentalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MylohyoidLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MylohyoidLine">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.NuchalPlanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.NuchalPlanum">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SuperciliaryArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SuperciliaryArch">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SupramastoidCrest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SupramastoidCrest">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ZygomaticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ZygomaticProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Zygomatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Zygomatics">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
     </owl:NamedIndividual>
     
 
@@ -2117,6 +2176,51 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#StudyDesign.FrSexEst">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AlexanderEckerCollectionDataEntryForm"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ExternalOccipitalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrSexEst.ZygomaticArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.FrontalAndParietalEminences"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Glabella"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.GonialAngle"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MandibleAsAWhole"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MastoidProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MentalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.MylohyoidLine"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SuperciliaryArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.SupramastoidCrest"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.ZygomaticProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#AssaySpecification.Zygomatics"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#DataTransformationObjective.FrSexEst"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ExternalOccipitalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrSexEst.ZygomaticArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.FrontalAndParietalEminences"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Glabella"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.GonialAngle"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MandibleAsAWhole"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MastoidProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MentalProtuberance"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.MylohyoidLine"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SuperciliaryArch"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.SupramastoidCrest"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.ZygomaticProcess"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionObjective.Zygomatics"/>
     </owl:NamedIndividual>
     
 
@@ -2129,100 +2233,10 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ExternalOccipitalProtuberance -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ExternalOccipitalProtuberance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ExternalOccipitalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.FrontalAndParietalEminences -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.FrontalAndParietalEminences">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Glabella -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Glabella">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.GonialAngle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.GonialAngle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MandibleAsAWhole -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MandibleAsAWhole">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MastoidProcess -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MastoidProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MentalProtuberance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MentalProtuberance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MylohyoidLine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.MylohyoidLine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.NuchalPlanum -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.NuchalPlanum">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SuperciliaryArch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SuperciliaryArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SupramastoidCrest -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.SupramastoidCrest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ExternalOccipitalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
     </owl:NamedIndividual>
     
@@ -2231,36 +2245,116 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticArch -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticProcess -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrontalAndParietalEminences -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticProcess">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrontalAndParietalEminences">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Zygomatics -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Glabella -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.Zygomatics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Glabella">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsádi_&amp;_Nemeskéri_1970 -->
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.GonialAngle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Acsadi_Nemeskeri_1970">
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-        <core1:description>Acsádi, György, and Janos Nemeskéri. &quot;History of human life span and mortality.&quot; Budapest: Acad. Kaido (1970).</core1:description>
-        <rdfs:label>Acsádi &amp; Nemeskéri 1970</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.GonialAngle">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MandibleAsAWhole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MandibleAsAWhole">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MastoidProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MastoidProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MentalProtuberance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MentalProtuberance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MylohyoidLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MylohyoidLine">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.NuchalPlanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.NuchalPlanum">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SuperciliaryArch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SuperciliaryArch">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SupramastoidCrest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SupramastoidCrest">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ZygomaticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ZygomaticProcess">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Zygomatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Zygomatics">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
     </owl:NamedIndividual>
     
 
@@ -2600,19 +2694,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <core1:description>White, Tim D., and Pieter A. Folkens. The human bone manual. Academic Press, 2005.</core1:description>
         <rdfs:label>White &amp; Folkens 2005</rdfs:label>
     </owl:NamedIndividual>
-
-
-    <!-- add classgroup entries for VIVO -->
-    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Investigation.FrSexEst">
-      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
-    </rdf:Description>
-    
-    <rdf:Description rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Planning.FrSexEst">
-      <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
-    </rdf:Description>
-    
-
-
 </rdf:RDF>
 
 
