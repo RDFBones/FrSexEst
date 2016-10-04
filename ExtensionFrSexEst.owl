@@ -1416,12 +1416,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ExternalOccipitalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1446,12 +1440,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1480,12 +1468,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.FrontalAndParietalEminences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1504,12 +1486,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Glabella"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1532,12 +1508,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.GonialAngle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1556,12 +1526,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MandibleAsAWhole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1584,12 +1548,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MastoidProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1608,12 +1566,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MentalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1636,12 +1588,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.MylohyoidLine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1660,12 +1606,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.NuchalPlanum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1688,12 +1628,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SuperciliaryArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1712,12 +1646,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.SupramastoidCrest"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1740,12 +1668,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.ZygomaticProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1764,12 +1686,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#Specimen.Zygomatics"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2192,6 +2108,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ExternalOccipitalProtuberance">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ExternalOccipitalProtuberance"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ExternalOccipitalProtuberance"/>
     </owl:NamedIndividual>
     
 
@@ -2201,6 +2118,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrSexEst.ZygomaticArch"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrSexEst.ZygomaticArch"/>
     </owl:NamedIndividual>
     
 
@@ -2210,6 +2128,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.FrontalAndParietalEminences">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.FrontalAndParietalEminences"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.FrontalAndParietalEminences"/>
     </owl:NamedIndividual>
     
 
@@ -2219,6 +2138,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Glabella">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Glabella"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Glabella"/>
     </owl:NamedIndividual>
     
 
@@ -2228,6 +2148,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.GonialAngle">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.GonialAngle"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.GonialAngle"/>
     </owl:NamedIndividual>
     
 
@@ -2237,6 +2158,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MandibleAsAWhole">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MandibleAsAWhole"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MandibleAsAWhole"/>
     </owl:NamedIndividual>
     
 
@@ -2246,6 +2168,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MastoidProcess">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MastoidProcess"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MastoidProcess"/>
     </owl:NamedIndividual>
     
 
@@ -2255,6 +2178,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MentalProtuberance">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MentalProtuberance"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MentalProtuberance"/>
     </owl:NamedIndividual>
     
 
@@ -2264,6 +2188,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.MylohyoidLine">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.MylohyoidLine"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.MylohyoidLine"/>
     </owl:NamedIndividual>
     
 
@@ -2273,6 +2198,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.NuchalPlanum">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.NuchalPlanum"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.NuchalPlanum"/>
     </owl:NamedIndividual>
     
 
@@ -2282,6 +2208,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SuperciliaryArch">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SuperciliaryArch"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SuperciliaryArch"/>
     </owl:NamedIndividual>
     
 
@@ -2291,6 +2218,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.SupramastoidCrest">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.SupramastoidCrest"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.SupramastoidCrest"/>
     </owl:NamedIndividual>
     
 
@@ -2300,6 +2228,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.ZygomaticProcess">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.ZygomaticProcess"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.ZygomaticProcess"/>
     </owl:NamedIndividual>
     
 
@@ -2309,6 +2238,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SkeletalMaterialRequirement.Zygomatics">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
         <obo:OBI_0001938 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#ValueSpecification.Zygomatics"/>
+	<obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecimenCollectionProcess.Zygomatics"/>
     </owl:NamedIndividual>
     
 
