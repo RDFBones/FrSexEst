@@ -85,7 +85,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
-        <owl:inverseOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#inverse_IsAbout"/>
     </owl:ObjectProperty>
     
 
@@ -149,14 +148,6 @@
     <!-- http://w3id.org/rdfbones/core#isMentioned -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core#isMentioned"/>
-    
-
-
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#inverse_IsAbout -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#inverse_IsAbout">
-        <rdfs:label>inverse IsAbout</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
@@ -1893,6 +1884,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.ExternalOccipitalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ExternalOccipitalProtuberance"/>
     </owl:NamedIndividual>
     
 
@@ -1901,6 +1893,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrSexEst.ZygomaticArch">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch"/>
     </owl:NamedIndividual>
     
 
@@ -1909,6 +1902,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrontalAndParietalEminences">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrontalAndParietalEminences"/>
     </owl:NamedIndividual>
     
 
@@ -1917,6 +1911,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.Glabella">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Glabella"/>
     </owl:NamedIndividual>
     
 
@@ -1925,6 +1920,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.GonialAngle">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.GonialAngle"/>
     </owl:NamedIndividual>
     
 
@@ -1933,6 +1929,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MandibleAsAWhole">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MandibleAsAWhole"/>
     </owl:NamedIndividual>
     
 
@@ -1941,6 +1938,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MastoidProcess">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MastoidProcess"/>
     </owl:NamedIndividual>
     
 
@@ -1949,6 +1947,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MentalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MentalProtuberance"/>
     </owl:NamedIndividual>
     
 
@@ -1957,6 +1956,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MylohyoidLine">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MylohyoidLine"/>
     </owl:NamedIndividual>
     
 
@@ -1965,6 +1965,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.NuchalPlanum">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum"/>
     </owl:NamedIndividual>
     
 
@@ -1973,6 +1974,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.SuperciliaryArch">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch"/>
     </owl:NamedIndividual>
     
 
@@ -1981,6 +1983,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.SupramastoidCrest">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SupramastoidCrest"/>
     </owl:NamedIndividual>
     
 
@@ -1989,6 +1992,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.ZygomaticProcess">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ZygomaticProcess"/>
     </owl:NamedIndividual>
     
 
@@ -1997,6 +2001,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.Zygomatics">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Zygomatics"/>
     </owl:NamedIndividual>
     
 
