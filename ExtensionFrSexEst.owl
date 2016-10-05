@@ -916,12 +916,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasValue"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -935,12 +929,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#EstimatedSex">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1061,12 +1049,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:Class rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexScore">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#inverse_IsAbout"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
@@ -2247,6 +2229,9 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001892"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#SexScore"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#DegreeOfSexualization"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/martin/ontologies/2016/8/untitled-ontology-26#EstimatedSex"/>
     </owl:NamedIndividual>
     
 
