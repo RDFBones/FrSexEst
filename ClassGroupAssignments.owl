@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_46565">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000067">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000260">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000338">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000339">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000963">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001892">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001896">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200166">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/AcademicArticle">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/ontology/bibo/Book">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#Completeness2States">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMandible">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfParietalBone">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfZygomaticBone">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#SkeletalInventory">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/core#SkeletalMaterialSpecification">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ExternalOccipitalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrontalAndParietalEminences">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Glabella">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.GonialAngle">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MandibleAsAWhole">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MastoidProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MentalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MylohyoidLine">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SupramastoidCrest">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ZygomaticProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Zygomatics">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatingSexBasedOnDegreeOfSexualization">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Investigation.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupInvestigations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Plan.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Planning.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ExternalOccipitalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrSexEst.ZygomaticArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Glabella">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.GonialAngle">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MandibleAsAWhole">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MastoidProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MentalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MylohyoidLine">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.NuchalPlanum">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SupramastoidCrest">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ZygomaticProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Zygomatics">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialSpecification.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.ExternalOccipitalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrSexEst.ZygomaticArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrontalAndParietalEminences">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.Glabella">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.GonialAngle">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.MandibleAsAWhole">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.MastoidProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.MentalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.MylohyoidLine">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.NuchalPlanum">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.SuperciliaryArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.SupramastoidCrest">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.ZygomaticProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.Zygomatics">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.ExternalOccipitalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrontalAndParietalEminences">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.Glabella">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.GonialAngle">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.MandibleAsAWhole">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.MastoidProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.MentalProtuberance">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.MylohyoidLine">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.NuchalPlanum">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.SuperciliaryArch">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.SupramastoidCrest">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.ZygomaticProcess">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.Zygomatics">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#StudyDesignExecution.FrSexEst">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001908">
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGroupAuxiliaries"/>
+  </rdf:Description>
+</rdf:RDF>
