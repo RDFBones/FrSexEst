@@ -3,7 +3,7 @@
 This is an extension for the sex estimation of adults utilising cranial and mandibular traits. The Freiburg method of sex estimation (abbr. FrSexEst) is a morphological method based on the scoring system developed by Acsádi & Nemeskéri 1970 and adjusted by Ferembach et al. 1979. The evaluated traits and their respective weights (in brackets) in the calculation of the degree of sexualization are as follows:
 
 
-Cranium:
+###Cranium:
 
 •	Glabella (3)
 
@@ -26,7 +26,7 @@ Cranium:
 •	Zygomatic arch (1)
 
 
-Mandible:
+###Mandible:
 
 •	Mandible as a whole (3)
 
