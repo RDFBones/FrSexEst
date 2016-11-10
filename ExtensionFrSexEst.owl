@@ -340,6 +340,12 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMaxilla"/>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfOccipitalBone"/>
@@ -396,32 +402,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.ExternalOccipitalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexEstimation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrSexEst.ZygomaticArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -642,6 +622,32 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch">
@@ -765,12 +771,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -814,6 +814,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1002,14 +1008,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrSexEst.ZygomaticArch -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrSexEst.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences">
@@ -1074,6 +1072,14 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch">
@@ -1123,20 +1129,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.ExternalOccipitalProtuberance -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.ExternalOccipitalProtuberance">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexEstimation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrSexEst.ZygomaticArch -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrSexEst.ZygomaticArch">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1260,6 +1252,20 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.SuperciliaryArch -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.SuperciliaryArch">
@@ -1342,38 +1348,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfTemporalBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfZygomaticBone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrontalAndParietalEminences -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrontalAndParietalEminences">
@@ -1381,13 +1355,13 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfParietalBone"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfParietalBone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1588,6 +1562,44 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfFrontalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfZygomaticBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Specimen.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.SuperciliaryArch -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.SuperciliaryArch">
@@ -1705,12 +1717,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrontalAndParietalEminences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1759,6 +1765,12 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1790,12 +1802,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.ExternalOccipitalProtuberance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1844,6 +1850,12 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.OrbitalAperture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2006,16 +2018,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrSexEst.ZygomaticArch -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch"/>
-        <rdfs:label>AssaySpecification.FrSexEst.ZygomaticArch</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrontalAndParietalEminences -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrontalAndParietalEminences">
@@ -2092,6 +2094,16 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
         <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum"/>
         <rdfs:label>AssaySpecification.NuchalPlanum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.OrbitalAperture -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.OrbitalAperture">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch"/>
+        <rdfs:label>AssaySpecification.OrbitalAperture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2256,17 +2268,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
-        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch"/>
-        <obo:OBI_0001938 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.FrSexEst.ZygomaticArch"/>
-        <rdfs:label>SkeletalMaterialRequirement.FrSexEst.ZygomaticArch</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrontalAndParietalEminences -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrontalAndParietalEminences">
@@ -2355,6 +2356,17 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.OrbitalAperture -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.OrbitalAperture">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.FrSexEst.ZygomaticArch"/>
+        <obo:OBI_0001938 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.OrbitalAperture"/>
+        <rdfs:label>SkeletalMaterialRequirement.OrbitalAperture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.SuperciliaryArch -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.SuperciliaryArch">
@@ -2416,15 +2428,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.ExternalOccipitalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
         <rdfs:label>SpecimenCollectionObjective.ExternalOccipitalProtuberance</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.FrSexEst.ZygomaticArch -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
-        <rdfs:label>SpecimenCollectionObjective.FrSexEst.ZygomaticArch</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2497,6 +2500,15 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.NuchalPlanum">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
         <rdfs:label>SpecimenCollectionObjective.NuchalPlanum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.OrbitalAperture -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.OrbitalAperture">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
+        <rdfs:label>SpecimenCollectionObjective.OrbitalAperture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2627,7 +2639,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AlexanderEckerCollectionDataEntryForm"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.ExternalOccipitalProtuberance"/>
-        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrSexEst.ZygomaticArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.FrontalAndParietalEminences"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.Glabella"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.GonialAngle"/>
@@ -2636,13 +2647,13 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MentalProtuberance"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.MylohyoidLine"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.OrbitalAperture"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.SuperciliaryArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.SupramastoidCrest"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.ZygomaticProcess"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.Zygomatics"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.FrSexEst"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.ExternalOccipitalProtuberance"/>
-        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrSexEst.ZygomaticArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrontalAndParietalEminences"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.Glabella"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.GonialAngle"/>
@@ -2651,13 +2662,13 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.MentalProtuberance"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.MylohyoidLine"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.OrbitalAperture"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.SuperciliaryArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.SupramastoidCrest"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.ZygomaticProcess"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.Zygomatics"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecificationOfDataToBeGeneratedInAnInvestigation.FrSexEst"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.ExternalOccipitalProtuberance"/>
-        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.FrSexEst.ZygomaticArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.FrontalAndParietalEminences"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.Glabella"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.GonialAngle"/>
@@ -2666,6 +2677,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.MentalProtuberance"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.MylohyoidLine"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.NuchalPlanum"/>
+        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.OrbitalAperture"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.SuperciliaryArch"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.SupramastoidCrest"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionObjective.ZygomaticProcess"/>
@@ -2690,16 +2702,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <rdfs:label>ValueSpecification.ExternalOccipitalProtuberance</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.FrSexEst.ZygomaticArch -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.FrSexEst.ZygomaticArch">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
-        <rdfs:label>ValueSpecification.FrSexEst.ZygomaticArch</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2780,6 +2782,16 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <rdfs:label>ValueSpecification.NuchalPlanum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.OrbitalAperture -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.OrbitalAperture">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
+        <rdfs:label>ValueSpecification.OrbitalAperture</rdfs:label>
     </owl:NamedIndividual>
     
 
