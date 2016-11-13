@@ -876,34 +876,28 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#EstimatingSexBasedOnDegreeOfSexualization -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatingSexBasedOnDegreeOfSexualization">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#isMentioned"/>
                 <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Acsadi_Nemeskeri_1970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <core1:description>Positive values of the DegreeOfSexualization indicate masculinity while negative values of the DegreeOfSexualization indicate femininity.
@@ -938,9 +932,9 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore -->
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
     </owl:Class>
     
@@ -993,7 +987,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2172,7 +2166,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Female -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Female">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex"/>
         <rdfs:label>Female</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2181,7 +2174,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Feminine -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Feminine">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Feminine</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2200,7 +2193,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Hyperfeminine -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Hyperfeminine">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Hyperfeminine</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2209,7 +2202,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Hypermasculine -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Hypermasculine">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Hypermasculine</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2218,7 +2211,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Indifferent -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Indifferent">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Indifferent</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2227,7 +2220,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Male -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Male">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex"/>
         <rdfs:label>Male</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2236,7 +2228,7 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Masculine -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Masculine">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Masculine</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2690,7 +2682,6 @@ If the DegreeOfSexualization ranges between -0.4 and 0.4 sex estimation is regar
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Uncertain -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Uncertain">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#EstimatedSex"/>
         <rdfs:label>Uncertain</rdfs:label>
     </owl:NamedIndividual>
     
