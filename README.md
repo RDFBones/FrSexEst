@@ -51,7 +51,7 @@ Kästner, M., Ortolf, S., Rüdell, A., Möller, D., & Wittwer-Backofen, U. (2011
 
 
 ##Wiki index
-The Wiki for FrSexEst is an thourough online documentation of the FrSexEst ontology ((https://github.com/RDFBones/FrSexEst/wiki)). This wiki should satisfy two objectives at once. On the one hand, the wiki contains further information about the extension itself (mostly network graphs) and some general tips for writing extensions to make FrSexEst understandable and a valuable resource for programmers interested in writing their own extensions.  On the other hand, it explicates the workflow of an FrSexEst investigation for anthropologists interested in carrying out sex estimations accordingly and archiving research data. The information is spread over the following wiki pages:
+The Wiki for FrSexEst is an thourough online documentation of the FrSexEst ontology (https://github.com/RDFBones/FrSexEst/wiki). This wiki should satisfy two objectives at once. On the one hand, the wiki contains further information about the extension itself (mostly network graphs) and some general tips for writing extensions to make FrSexEst understandable and a valuable resource for programmers interested in writing their own extensions.  On the other hand, it explicates the workflow of an FrSexEst investigation for anthropologists interested in carrying out sex estimations accordingly and archiving research data. The information is spread over the following wiki pages:
 
 
 •	General structure of FrSexEst
