@@ -23,7 +23,7 @@ This is an extension for the sex estimation of adults utilising cranial and mand
 
 •	External occipital protuberance (2)
 
-•	Zygomatic arch (1)
+•	Orbital aperture (1)
 
 
 ###Mandible:
@@ -37,14 +37,16 @@ This is an extension for the sex estimation of adults utilising cranial and mand
 •	Mylohyoid line (1)
 
 
-These traits (regarded as “assays” in the framework of RDF-Bones) and their respective weights are in general according to Ferembach et al. 1979 except for the zygomatic arch which is evaluated additionally. Furthermore, the frontal inclination of the skull is not part of FrSexEst.
-These ten cranial and four mandibular traits (cf. Assays) of FrSexEst were used in the sex estimation of skulls from the Alexander-Ecker-Collection in Freiburg (for further information on the Alexander-Ecker-Collection cf. Kästner et al. 2011). Thus, the collected data from the Alexander-Ecker-Collection can be digitized and made accessible for future research within the flexible RDFBones-Ontology by means of this extension. 
+These traits (regarded as “assays” in the framework of RDF-Bones) and their respective weights are in general according to Ferembach et al. 1979 except for the frontal inclination of the skull and the supraorbital margin which are not part of FrSexEst.
+These ten cranial and four mandibular traits of FrSexEst were used in the sex estimation of skulls from the Alexander-Ecker-Collection in Freiburg (for further information on the Alexander-Ecker-Collection cf. Kästner et al. 2011). Thus, the collected data from the Alexander-Ecker-Collection can be digitized and made accessible for future research within the flexible RDFBones-Ontology by means of this extension. 
 The Freiburg method of sex estimation can be applied to estimate the sex of any human skull, of course. By removing the zygomatic arch and adding the frontal inclination another extension can easily be created which is then congruent with Ferembach et al. 1979.
 
 
 ##References:
 Acsádi, György, and Janos Nemeskéri. "History of human life span and mortality." Budapest: Acad. Kaido (1970).
+
 Ferembach, Denise, Ilse Schwidetzky, and Milan Stloukal. "Empfehlungen für die Alters- und Geschlechtsdiagnose am Skelett.(Recommandations pour le diagnostic de l'âge et du sexe sur les squelettes)." Homo Göttingen 30.2 (1979): 1-32.
+
 Kästner, M., Ortolf, S., Rüdell, A., Möller, D., & Wittwer-Backofen, U. (2011). The Alexander Ecker Collection in Freiburg. Documenta Archaeobiologiae, 8, 275-284.
 
 
