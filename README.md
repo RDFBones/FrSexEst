@@ -39,7 +39,7 @@ This is an extension for the sex estimation of adults utilising cranial and mand
 
 These traits (regarded as “assays” in the framework of RDF-Bones) and their respective weights are in general according to Ferembach et al. 1979 except for the frontal inclination of the skull and the supraorbital margin which are not part of FrSexEst.
 These ten cranial and four mandibular traits of FrSexEst were used in the sex estimation of skulls from the Alexander-Ecker-Collection in Freiburg (for further information on the Alexander-Ecker-Collection cf. Kästner et al. 2011). Thus, the collected data from the Alexander-Ecker-Collection can be digitized and made accessible for future research within the flexible RDFBones-Ontology by means of this extension. 
-The Freiburg method of sex estimation can be applied to estimate the sex of any human skull, of course. By removing the zygomatic arch and adding the frontal inclination another extension can easily be created which is then congruent with Ferembach et al. 1979.
+The Freiburg method of sex estimation can be applied to estimate the sex of any human skull, of course. By adding the frontal inclination and the supraorbital margin, another extension can easily be created which is then congruent with Ferembach et al. 1979.
 
 
 ##References:
