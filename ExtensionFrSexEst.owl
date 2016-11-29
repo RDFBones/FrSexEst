@@ -664,6 +664,18 @@
                 <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <core1:description>The shape of the Orbital Aperture should be scored according to Sjøvold 1988 (graph 168, d) viewed frontally (in norma facialis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: round
+
+Feminine: round
+
+Indifferent: medium
+
+Masculine: slightly quadrangular
+
+Hypermasculine: quadrangular</core1:description>
     </owl:Class>
     
 
@@ -901,6 +913,47 @@
                 <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <core1:description>A DataTransformation.FrSexEst is performed to obtain a DegreeOfSexualization.
+According to the DataTransformationObjective.FrSexEst, the DegreeOfSexualization is only calculated from weighted means of data items (SexScores) which were collected on a single skull.
+The calculation must be done by hand following these steps (the researcher may use the .csv version of the AlexanderEckerCollectionDataEntryForm):
+
+1st step: assign rational numbers (X) to labels
+
+hyperfeminine -&gt; -2
+feminine -&gt; -1
+indifferent -&gt; 0
+masculine -&gt; +1
+hypermasculine -&gt; +2
+
+
+2nd step: calculate weighted Sex Scores (X*W) for each assay
+
+External occipital protuberance: X*2
+Frontal and parietal eminences: X*2
+Glabella: X*3
+Gonial angle: X*2
+Mandible as a whole: X*3
+Mastoid process: X*3
+Mental protuberance: X*2
+Mylohyoid line: X*1
+Nuchal planum: X*3
+Orbital aperture: X*1
+Superciliary arch: X*2
+Supramastoid crest: X*2
+Zygomatic process: X*3
+Zygomatics: X*2
+
+
+3rd step: calculate sum of weighted SexScores and sum of weights
+
+sum(WSS):   sum up (Xi * Wj) for i assays with their respective weights j
+
+sum(W):   sum up the values of all weights Wj
+
+
+4th step: calcalute DegreeOfSexualization
+
+DegreeOfSexualization = sum(WSS) / sum(W)</core1:description>
     </owl:Class>
     
 
@@ -937,9 +990,9 @@
                 <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <core1:description>The DegreeOfSexualization has been obtained from SexScores from assays carried out on material of one single skull or parts of one single skull. Thus, the conclusion refers to one individual.
+        <core1:description>The DegreeOfSexualization is calculated from SexScores from assays carried out on material of one single skull or parts of one single skull. Thus, the conclusion refers to one individual.
 The DegreeOfSexualization is a rational number that ranges from -2 to +2 with negative values indicating femininity and positive values indicating masculinity.
-There are at leat two ways of drawing a conclusion based on the DegreeOfSexualization, i.e. two ways of selecting a LabelForSex. It is highly recommended to specify the way of drawing a conclusion in the plan and stick to it throughout the whole investigation.
+There are at leat two ways of drawing a conclusion based on the DegreeOfSexualization, i.e. two ways of selecting a LabelForSex. It is highly recommended to specify the way of drawing a conclusion in the plan and follow the plan throughout the whole investigation.
 
 
 1. Rigorously calculating
@@ -998,6 +1051,8 @@ In this case, please add a comment to the instance of EstimatingSexBasedOnDegree
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <core1:description>The instances of this class are used as labels for instances of subclasses of SexScore and instances of EstimatingSexBasedOnDegreeOfSexualization (= drawing a conclusion).
+They denote the appearance of traits that a researcher evaluated or denote the sex of an individual that was estimated based on the DegreeOfSexualization.</core1:description>
     </owl:Class>
     
 
@@ -1071,6 +1126,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ExternalOccipitalProtuberance">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1079,6 +1136,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1087,6 +1146,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Glabella">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1095,6 +1156,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.GonialAngle">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1103,6 +1166,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MandibleAsAWhole">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1111,6 +1176,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MastoidProcess">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1119,6 +1186,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MentalProtuberance">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1127,6 +1196,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MylohyoidLine">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1135,6 +1206,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.NuchalPlanum">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1143,6 +1216,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1151,6 +1226,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1159,6 +1236,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SupramastoidCrest">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1167,6 +1246,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ZygomaticProcess">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1175,6 +1256,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Zygomatics">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore"/>
+        <core1:description>The researcher expresses his evaluation of the respective trait by assigning a LabelForSex to the instance of this class.
+The researcher may add a comment to this instance to explain his decision in detail. This is recommended for limiting cases.</core1:description>
     </owl:Class>
     
 
@@ -1189,6 +1272,8 @@ The researcher may specify how to draw a conclusion based on the DegreeOfSexuali
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class technically required for the automatic prescreening of potential specimen.
+The class which SkeletalMaterialSpecification.FrSexEst is about defines the range within which the software searches for potential specimens. As default, &quot;Skeletal inventory&quot; is chosen. Thus, all skeletal inventories, i.e. all the material within a collection, is screened. By defining subclasses of &apos;Skeletal inventory&apos; and selecting one or more of these, the range of the prescreening procedure can be adjusted.</rdfs:comment>
     </owl:Class>
     
 
@@ -2369,6 +2454,8 @@ Due to a lack of empirical evidence for a &quot;sufficient number of evaluated t
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexEstimation">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+        <core1:description>The estimation of the sex of an individual based on skeletal remains is a classical aim of anthropological investigations. It can be realized by evaluating different traits on different bony parts of the skeleton.
+All material and all traits (=assays) that can be used to estimate the sex of an individual based on skeletal remains are related to this instance and can easily be queried.</core1:description>
         <rdfs:label>SexEstimation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3055,45 +3142,187 @@ It is used to determine that the specified input of the corresponding SpecimenCo
      -->
 
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ExternalOccipitalProtuberance">
-        <core1:description>&quot;The external occipital protuberance lies on the ectocranial midline where the occipital and nuchal planes meet. It is highly variable in appearance and heavier and more prominent in male individuals&quot; (White &amp; Folkens 2005: 100).</core1:description>
+        <core1:description>The External Occipital Protuberance should be scored according to Sjøvold 1988 (graph 168, b) viewed laterally (in norma lateralis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very weak
+
+Feminine: weak
+
+Indifferent: medium
+
+Masculine: strong
+
+Hypermasculine: very strong</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrontalAndParietalEminences">
-        <core1:description>&quot;The parietal tuber (boss, eminence) is the large, rounded eminence centered on the ectocranial surface of the parietal. It marks the center of ossification of the bone&quot; (White &amp; Folkens 2005: 93).</core1:description>
-        <core1:description>&quot;Frontal eminences (frontal tubers, or bosses) dominate the ectocranial surface. These paired frontal bosses mark the location of the original centers of ossification of this bone&quot; (White &amp; Folkens 2005: 87).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: accentuated
+
+Feminine: slightly accentuated
+
+Indifferent: medium
+
+Masculine: weak
+
+Hypermasculine: absent</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Glabella">
-        <core1:description>&quot;Superciliary arches (brow ridges) are the bony tori over the orbits. They are most prominent in men and are sometimes joined by a prominent glabellar region&quot; (White &amp; Folkens 2005: 88).</core1:description>
+        <core1:description>The Glabella should be scored according to Sjøvold 1988 (graph 168, a) viewed laterally (in norma lateralis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very weak
+
+Feminine: slightly accentuated
+
+Indifferent: medium
+
+Masculine: accentuated
+
+Hypermasculine: very strong</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.GonialAngle">
-        <core1:description>&quot;The angle (or gonial angle) is the rounded posteroinferior corner of the mandible. The masseter muscle attachment is centered on the lateral surface of the ramus, all along the angle (White &amp; Folkens 2005: 124).</core1:description>
+        <core1:description>The Gonial Angle should be scored according to Sjøvold 1988 (graph 168, e) viewed laterally (in norma lateralis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: smooth
+
+Feminine: almost smooth
+
+Indifferent: small protrusions
+
+Masculine: protrusions
+
+Hypermasculine: strong protrusions</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MandibleAsAWhole">
-        <core1:description>&quot;The mandible, or lawer jaw, articulates through its condyles (via an articular disk) with the temporal bones at the temporomandibular joint. The primary function of this bone is in mastication (chewing). The mandible holds the lower teeth and provides insertion surfaces for the muscles of mastication. These two functions are performed by the two basic parts of the mandible: the body (corpus) and the ascending ramus&quot; (White &amp; Folkens 2005: 122).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: gracile
+
+Feminine: moderately gracile
+
+Indifferent: medium
+
+Masculine: firm
+
+Hypermasculine: very firm</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MastoidProcess">
-        <core1:description>&quot;The mastoid process bears an external surface that is roughened for the attachment of several muscels including the following: sternocleidomastoideus, splenius capitis, and longissimus capitis. These muscles function in extension, flexion, and rotation of the head. The temporalis muscle may also attach in this region when the supramastoid crest is present on the mastoid area, as in some humans and many fossil hominids. Internally, the thin-walled mastoid process is occupied by a number of variably developed voids known as mastoid cells&quot; (White &amp; Folkens 2005: 96).</core1:description>
+        <core1:description>The Mastoid Process should be scored according to Sjøvold 1988 (graph 168, c) viewed dorsally (in norma occipitalis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very small
+
+Feminine: small
+
+Indifferent: medium
+
+Masculine: large
+
+Hypermasculine: very large</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MentalProtuberance">
-        <core1:description>&quot;The mental protuberance (mental eminence) is the triangular eminence, or bony chin, at the base of the corpus in the anterior symphyseal region. It is separated from the alveolar margins of the incisors by a pronounced incurvation or &quot;mental sulcus&quot; (or the &quot;labiomental sulcus&quot; if flesh is still attached to the depression) in modern humans&quot; (White &amp; Folkens 2005: 123).</core1:description>
+        <core1:description>The Metal Protuberance should be scored according to Sjøvold 1988 (graph 168, f) viewed frontally (in norma facialis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: small, rounded
+
+Feminine: small
+
+Indifferent: medium
+
+Masculine: firm
+
+Hypermasculine: firm, with protuberances bilaterally</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.MylohyoidLine">
-        <core1:description>&quot;The mylohyoid line obliquely crosses the medial surface of the corpus, beginning near the alveolar margin at the last molar position and diminishing as it runs anteroinferiorly. It marks an attachment site for the mylohyoid muscle, a muscle that forms the muscular floor of the oral cavity and acts to elevate the tongue and hyoid bone&quot; (White &amp; Folkens 2005: 123).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: thin
+
+Feminine: thin
+
+Indifferent: medium
+
+Masculine: thick
+
+Hypermasculine: thick</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum">
-        <core1:description>&quot;The occipital planum is that part of the occipital squama that lies above the superior nuchal lines. The section of squama inferior to the lines is the nuchal planum&quot; (White &amp; Folkens 2005: 100).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: absent
+
+Feminine: weak
+
+Indifferent: medium
+
+Masculine: strong
+
+Hypermasculine: very strong</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch">
-        <core1:description>&quot;Superciliary arches (brow ridges) are the bony tori over the orbits. They are most prominent in men and are sometimes joined by a prominent glabellar region&quot; (White &amp; Folkens 2005: 88).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very weak
+
+Feminine: slightly accentuated
+
+Indifferent: medium
+
+Masculine: accentuated
+
+Hypermasculine: very strong</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SupramastoidCrest">
-        <core1:description>&quot;The supramastoid crest is the posterior extension of the suprameatal crest. The continuous raised edge of these crests marks the limit of the temporalis muscle and temporal fascia attachment&quot; (White &amp; Folkens 2005: 95).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very weak
+
+Feminine: weak
+
+Indifferent: medium
+
+Masculine: strong
+
+Hypermasculine: very strong</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.ZygomaticProcess">
-        <core1:description>&quot;Zygomatic processes form the most lateral and anterior corners of the frontal&quot; (White &amp; Folkens 2005: 88).</core1:description>
-        <core1:description>&quot;The zyomatic process of the temporal is a thin projection of bone that forms the posterior half of the zygomatic arch. Its anterior edge is the serrated zygomaticotemporal suture, its superior edge is an attachment for the temporal fascia, and its inferior edge anchors fibers of the masseter muscle&quot; (White &amp; Folkens 2005: 95).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: small, thin
+
+Feminine: moderate
+
+Indifferent: medium
+
+Masculine: large, firm
+
+Hypermasculine: very large, firm</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.Zygomatics">
-        <core1:description>&quot;Zygomatics form the prominent corners (cheeks) of the face. The edges are easily identifiable, with the rounded orbital rim, the sharp area around jugale adjacent to the temporal fossa, and the roughened inferior border. Each zygomatic bone articulates, via its three main processes, with the frontal, sphenoid, temporal, and maxilla&quot; (White &amp; Folkens 2005: 115).</core1:description>
+        <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: very small, smooth
+
+Feminine: small, smooth
+
+Indifferent: medium, irregular surface
+
+Masculine: large, irregular surface
+
+Hypermasculine: very large, irregular surface</core1:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization">
+        <core1:description>The DegreeOfSexualization is the outcome of the DataTransformation.FrSexEst.
+According to the DataTransformationObjective.FrSexEst, the DegreeOfSexualization is only calculated from weighted means of data items (SexScores) which were collected on a single skull.
+A DegreeOfSexualization calculated from data items collected from material that belongs to different individuals is meaningless.
+The DegreeOfSexualization is a rational number (therefore type xsd:float) ranging from-2 to +2.</core1:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore">
+        <core1:description>The outcome of the assays that are used in a FrSexEst investigation is stored as a data item of the type SexScore. There exists a subclass of SexScore for each assay.</core1:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#SpecimenCollectionProcess.ExternalOccipitalProtuberance">
         <core1:description>The input of this SpecimenCollectionProcess is determined by the software which automatically prescreens all skeletal inventories for potential input. A potential input is an entire bone or a set of entire bones which satisfies the corresponding SpecimenCollectionObjective.
