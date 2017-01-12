@@ -2092,14 +2092,6 @@ Thus, an investigation which comprises sex estimations of several individuals wi
     
 
 
-    <!-- http://w3id.org/rdfbones/core#complete -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete">
-        <rdfs:label>complete</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Acsadi_Nemeskeri_1970 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Acsadi_Nemeskeri_1970">
@@ -2971,7 +2963,6 @@ Furthermore, the general StudyDesign.FrSexEst is concretized as a plan which spe
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.ExternalOccipitalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.ExternalOccipitalProtuberance</rdfs:label>
@@ -2983,7 +2974,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.FrontalAndParietalEminences">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.FrontalAndParietalEminences</rdfs:label>
@@ -2995,7 +2985,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.Glabella">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.Glabella</rdfs:label>
@@ -3007,7 +2996,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.GonialAngle">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.GonialAngle</rdfs:label>
@@ -3019,7 +3007,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.MandibleAsAWhole">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.MandibleAsAWhole</rdfs:label>
@@ -3031,7 +3018,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.MastoidProcess">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.MastoidProcess</rdfs:label>
@@ -3043,7 +3029,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.MentalProtuberance">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.MentalProtuberance</rdfs:label>
@@ -3055,7 +3040,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.MylohyoidLine">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.MylohyoidLine</rdfs:label>
@@ -3067,7 +3051,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.NuchalPlanum">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.NuchalPlanum</rdfs:label>
@@ -3079,7 +3062,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.OrbitalAperture">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.OrbitalAperture</rdfs:label>
@@ -3091,7 +3073,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.SuperciliaryArch">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.SuperciliaryArch</rdfs:label>
@@ -3103,7 +3084,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.SupramastoidCrest">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.SupramastoidCrest</rdfs:label>
@@ -3115,7 +3095,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.ZygomaticProcess">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.ZygomaticProcess</rdfs:label>
@@ -3127,7 +3106,6 @@ It is used to determine that the specified input of the corresponding SpecimenCo
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#ValueSpecification.Zygomatics">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <obo:OBI_0000999 rdf:resource="http://w3id.org/rdfbones/core#complete"/>
         <core1:description>An instance technically required for the automatic prescreening of potential specimen.
 It is used to determine that the specified input of the corresponding SpecimenCollectionProcess is a complete bone or set of complete bones.</core1:description>
         <rdfs:label>ValueSpecification.Zygomatics</rdfs:label>
