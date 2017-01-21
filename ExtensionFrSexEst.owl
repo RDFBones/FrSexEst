@@ -2094,9 +2094,7 @@ Thus, an investigation which comprises sex estimations of several individuals wi
 
     <!-- http://w3id.org/rdfbones/core#complete -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete">
-        <rdfs:label>complete</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete"/>
     
 
 
