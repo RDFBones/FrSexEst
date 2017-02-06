@@ -2310,7 +2310,7 @@ The researcher is encouraged to specify his procedure in the Plan.FrSexEst.</cor
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.OrbitalAperture">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.FrSexEst.ZygomaticArch"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture"/>
         <core1:description>The shape of the Orbital Aperture should be scored according to Sjøvold 1988 (graph 168, d) viewed frontally (in norma facialis).</core1:description>
         <rdfs:label>AssaySpecification.OrbitalAperture</rdfs:label>
     </owl:NamedIndividual>
