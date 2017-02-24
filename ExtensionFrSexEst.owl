@@ -670,18 +670,6 @@
                 <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <core1:description>The shape of the Orbital Aperture should be scored according to Sjøvold 1988 (graph 168, d) viewed frontally (in norma facialis).
-These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
-
-Hyperfeminine: round
-
-Feminine: round
-
-Indifferent: medium
-
-Masculine: slightly quadrangular
-
-Hypermasculine: quadrangular</core1:description>
     </owl:Class>
     
 
@@ -798,9 +786,9 @@ Hypermasculine: quadrangular</core1:description>
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrSexEst -->
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.DegreeOfSexualization -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrSexEst">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.DegreeOfSexualization">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -811,7 +799,7 @@ Hypermasculine: quadrangular</core1:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.FrSexEst"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.DegreeOfSexualization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -825,98 +813,98 @@ Hypermasculine: quadrangular</core1:description>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ExternalOccipitalProtuberance"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ExternalOccipitalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.FrontalAndParietalEminences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Glabella"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Glabella"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.GonialAngle"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.GonialAngle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MandibleAsAWhole"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MandibleAsAWhole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MastoidProcess"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MastoidProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MentalProtuberance"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MentalProtuberance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MylohyoidLine"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MylohyoidLine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.NuchalPlanum"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.NuchalPlanum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.OrbitalAperture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SuperciliaryArch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SupramastoidCrest"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SupramastoidCrest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ZygomaticProcess"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ZygomaticProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Zygomatics"/>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Zygomatics"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <core1:description>A DataTransformation.FrSexEst is performed to obtain a DegreeOfSexualization.
@@ -960,6 +948,398 @@ sum(W):   sum up the values of all weights Wj
 4th step: calcalute DegreeOfSexualization
 
 DegreeOfSexualization = sum(WSS) / sum(W)</core1:description>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.ExternalOccipitalProtuberance -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.ExternalOccipitalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ExternalOccipitalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ExternalOccipitalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrontalAndParietalEminences -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrontalAndParietalEminences">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.FrontalAndParietalEminences"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.Glabella -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.Glabella">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Glabella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.GonialAngle -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.GonialAngle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.GonialAngle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MandibleAsAWhole -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MandibleAsAWhole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MandibleAsAWhole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MastoidProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MastoidProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MastoidProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MastoidProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MentalProtuberance -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MentalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MentalProtuberance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MylohyoidLine -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.MylohyoidLine">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MylohyoidLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.NuchalPlanum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.NuchalPlanum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.NuchalPlanum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.OrbitalAperture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.SuperciliaryArch -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.SuperciliaryArch">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SuperciliaryArch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.SupramastoidCrest -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.SupramastoidCrest">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SupramastoidCrest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.ZygomaticProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.ZygomaticProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ZygomaticProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.Zygomatics -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.Zygomatics">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:hasValue rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SexScore.Zygomatics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Zygomatics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1987,7 +2367,7 @@ Therefore, each instance of this class is a suitable input for the corresponding
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.FrSexEst"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformation.DegreeOfSexualization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2077,6 +2457,133 @@ Therefore, each instance of this class is a suitable input for the corresponding
         <core1:description>For each individual&apos;s skull whose sex should be estimated, an instance of StudyDesignExecution.FrSexEst should be created.
 All assays which can be carried out on this skull have only material from this skull as input (=specimen). These assays are related to the corresponding instance of StudyDesignExecution.FrSexEst.
 Thus, an investigation which comprises sex estimations of several individuals will consist of a single instance of Investigation.FrSexEst and instances of StudyDesignExecution as to the number of individuals in the sample.</core1:description>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ExternalOccipitalProtuberance -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ExternalOccipitalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.FrontalAndParietalEminences -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.FrontalAndParietalEminences">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Glabella -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Glabella">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.GonialAngle -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.GonialAngle">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MandibleAsAWhole -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MandibleAsAWhole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MastoidProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MastoidProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MentalProtuberance -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MentalProtuberance">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MylohyoidLine -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.MylohyoidLine">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.NuchalPlanum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.NuchalPlanum">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.OrbitalAperture -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.OrbitalAperture">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SuperciliaryArch -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SuperciliaryArch">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SupramastoidCrest -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.SupramastoidCrest">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ZygomaticProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.ZygomaticProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Zygomatics -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore.Zygomatics">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#WeightedSexScore"/>
     </owl:Class>
     
 
@@ -2176,6 +2683,12 @@ The data entry form can be downloaded from the GitHub page of FrSexEst alternati
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.NuchalPlanum"/>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture"/>
     
 
 
@@ -2365,14 +2878,23 @@ The researcher is encouraged to specify his procedure in the Plan.FrSexEst.</cor
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.FrSexEst -->
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.DegreeOfSexualization -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.FrSexEst">
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.DegreeOfSexualization">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
         <core1:description>The DegreeOfSexualization is calculated from weighted means of SexScores. Thus, the DegreeOfSexualization may have the same value if all 14 assays were carried out or if only one assay was carried out.
 Many anthropologists, especially in continental Europe, share the following assumption: the more traits are evaluated, the more reliable is the sex estimation. Since you cannot tell from the DegreeOfSexualization alone how many traits were evaluated, the data transformation objective states that a data transformation may performed only in cases where a sufficient number of traits were evaluated (to ensure the reliability of the following conclusion based on the DegreeOfSexualization).
 Due to a lack of empirical evidence for a &quot;sufficient number of evaluated traits&quot;, the researcher may specify this precisely in the corresponding instance of Plan.FrSexEst.</core1:description>
-        <rdfs:label>DataTransformationObjective.FrSexEst</rdfs:label>
+        <rdfs:label>DataTransformationObjective.DegreeOfSexualization</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.WeightedSexScore">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <rdfs:label>DataTransformationObjective.WeightedSexScore</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2920,7 +3442,7 @@ See corresponding instance of SpecimenCollectionObjective for further informatio
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.SupramastoidCrest"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.ZygomaticProcess"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#AssaySpecification.Zygomatics"/>
-        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.FrSexEst"/>
+        <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DataTransformationObjective.DegreeOfSexualization"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.ExternalOccipitalProtuberance"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.FrontalAndParietalEminences"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#SkeletalMaterialRequirement.Glabella"/>
@@ -3273,6 +3795,20 @@ Masculine: strong
 
 Hypermasculine: very strong</core1:description>
     </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.OrbitalAperture">
+        <core1:description>The shape of the Orbital Aperture should be scored according to Sjøvold 1988 (graph 168, d) viewed frontally (in norma facialis).
+These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
+
+Hyperfeminine: round
+
+Feminine: round
+
+Indifferent: medium
+
+Masculine: slightly quadrangular
+
+Hypermasculine: quadrangular</core1:description>
+    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Assay.SuperciliaryArch">
         <core1:description>These indications of the appearances of the respective trait (translated from Ferembach et al. 1979, table 2) may guide the reseachers evaluation:
 
@@ -3408,5 +3944,5 @@ Although different material could be selected for each trait, the researcher sho
 
 
 
-<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
