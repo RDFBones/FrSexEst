@@ -1642,14 +1642,6 @@ In this case, please add a comment to the instance of EstimatingSexBasedOnDegree
     
 
 
-    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSexScore">
@@ -3224,7 +3216,6 @@ Due to a lack of empirical evidence for a &quot;sufficient number of evaluated t
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Female -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Female">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Female</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3279,7 +3270,6 @@ Due to a lack of empirical evidence for a &quot;sufficient number of evaluated t
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Male -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Male">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Male</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3796,7 +3786,6 @@ Furthermore, the general StudyDesign.FrSexEst is concretized as a plan which spe
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Uncertain -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Uncertain">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
         <rdfs:label>Uncertain</rdfs:label>
     </owl:NamedIndividual>
     
