@@ -173,6 +173,16 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#HasText -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#HasText">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+        <core1:description xml:lang="en">A data property defined for FrSexEst to assign texts to instances</core1:description>
+        <rdfs:label xml:lang="en">has text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -187,6 +197,12 @@
     <!-- http://purl.obolibrary.org/obo/FMA_46565 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_46565"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
@@ -1516,6 +1532,21 @@ WeightedSexScore = X * W = X * 2</core1:description>
     
 
 
+    <!-- http://w3id.org/rdfbones/extensions/FrSexEst#Conclusion.FrSexEst -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#Conclusion.FrSexEst">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#HasText"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <core1:description>The written conclusion drawn by a researcher on the sex estimation of a human skull.</core1:description>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization">
@@ -1537,22 +1568,15 @@ WeightedSexScore = X * W = X * 2</core1:description>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#Conclusion.FrSexEst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#DegreeOfSexualization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/rdfbones/extensions/FrSexEst#LabelForSex"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasValue"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <core1:description>The DegreeOfSexualization is calculated from SexScores from assays carried out on material of one single skull or parts of one single skull. Thus, the conclusion refers to one individual.
