@@ -1,9 +1,9 @@
-#Extension “Freiburg Sex Estimation” for RDFBones-O
-##Anthropological background
+# Extension “Freiburg Sex Estimation” for RDFBones-O
+## Anthropological background
 This is an extension for the sex estimation of adults utilising cranial and mandibular traits. It is based on the data entry form for the sex estimation of adults used by Biological Anthropology Freiburg. The morphological methods applied in FrSexEst are based on the scoring system developed by Acsádi & Nemeskéri 1970 and adjusted by Ferembach et al. 1979. The evaluated traits and their respective weights (in brackets) in the calculation of the degree of sexualization are as follows:
 
 
-###Cranium:
+### Cranium:
 
 •	Glabella (3)
 
@@ -26,7 +26,7 @@ This is an extension for the sex estimation of adults utilising cranial and mand
 •	Orbital aperture (1)
 
 
-###Mandible:
+### Mandible:
 
 •	Mandible as a whole (3)
 
@@ -42,7 +42,7 @@ The traits of FrSexEst were used in the sex estimation of skulls from the Alexan
 FrSexEst can be applied to estimate the sex of any adult human skull, of course. By adding the frontal inclination and the supraorbital margin, another extension can easily be created which is then fully congruent with Ferembach et al. 1979.
 
 
-##References:
+## References:
 Acsádi, György, and Janos Nemeskéri. "History of human life span and mortality." Budapest: Acad. Kaido (1970).
 
 Ferembach, Denise, Ilse Schwidetzky, and Milan Stloukal. "Empfehlungen für die Alters- und Geschlechtsdiagnose am Skelett.(Recommandations pour le diagnostic de l'âge et du sexe sur les squelettes)." Homo Göttingen 30.2 (1979): 1-32.
@@ -50,7 +50,7 @@ Ferembach, Denise, Ilse Schwidetzky, and Milan Stloukal. "Empfehlungen für die 
 Kästner, M., Ortolf, S., Rüdell, A., Möller, D., & Wittwer-Backofen, U. (2011). The Alexander Ecker Collection in Freiburg. Documenta Archaeobiologiae, 8, 275-284.
 
 
-##Wiki index
+## Wiki index
 The Wiki for FrSexEst is a thorough online documentation of the FrSexEst ontology (https://github.com/RDFBones/FrSexEst/wiki). This Wiki should satisfy two objectives at once. On the one hand, the Wiki contains further information about the extension itself (mostly network graphs) and some general tips for writing extensions to make FrSexEst understandable and a valuable resource for programmers interested in writing their own extensions.  On the other hand, it explicates the workflow of a FrSexEst investigation for anthropologists interested in carrying out sex estimations accordingly and archiving research data. The Wiki provides further information on the following topics:
 
 
