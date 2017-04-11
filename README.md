@@ -63,3 +63,11 @@ The Wiki for FrSexEst is a thorough online documentation of the FrSexEst ontolog
 •	Drawing a conclusion
 
 •	General tips for extension writing
+
+## For future development
+* Implement a R-package which automatically calculates the degree of sexualization from the sex scores
+* Find a common data property to add text/strings to instances of ConclusionTextualEntity instead of the FrSexEst specific 'has text'
+* Formulate a concrete idea of how documentig works
+* Add a secondary skeletal inventory which refers directly to anatomical traits, for example the Glabella instead of frontal bone as input of the specimen collection process
+* Since investigations correspond to the sex estimation of a single human skull, we need a sophisticated way to relate several investigations to a higher level research project
+* Use cardinality restrictions more rigorously. For example, each investigation has exactly 1 study design execution, which has max. 1 Assay.Glabella and max. 1 Calculate_WeightedSexScore.Glabella but exactly 1 Calculate_DegreeOfSexaulization and so on
